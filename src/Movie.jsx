@@ -89,10 +89,10 @@ const Movie = () => {
       <Box
         sx={{
           display: 'grid',
-          gridTemplateColumns: 'repeat(3, 1fr)',
+          gridTemplateColumns: 'repeat(4, 1fr)',
           '@media (max-width:1024px)': {
             gridTemplateColumns: 'repeat(2, 1fr)',
-            gridColumnGap: '1rem',
+            gridColumnGap: '0.1rem',
           },
           '@media (max-width:767px)': {
             gridTemplateColumns: 'repeat(1, 1fr)',
@@ -109,14 +109,14 @@ const Movie = () => {
               margin: '20px auto',
               backgroundColor: 'black',
               borderRadius: '10px',
-              width: '300px',
+              width: '340px',
             }}
             key={movie.id}
           >
             <Image
               src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
-              height='300px'
-              width='300px'
+              height='380px'
+              width='340px'
               fit='fill'
               duration={0}
               showLoading={true}
